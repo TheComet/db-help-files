@@ -1,0 +1,99 @@
+a:active
+{
+color:#fff;
+text-decoration:none;
+}
+
+a:link,
+a:visited,
+.commandFolded
+{
+color:#82d;
+text-decoration:none;
+}
+
+a:link,
+a:visited,
+.commandFolded,
+.commandUnfolded
+{
+transition:color .5s;
+-moz-transition:color .5s;
+-webkit-transition:color .5s;
+-o-transition:color .5s;
+-ms-transition:color .5s;
+transition:text-shadow .4s;
+}
+
+.commandUnfolded
+{
+color:#f82;
+text-decoration:none;
+text-shadow: 0 0 8px #f63;
+}
+
+a:link:hover,
+a:visited:hover,
+.commandFolded:hover,
+.commandUnfolded:hover
+{
+color:#fa5;
+text-decoration:none;
+text-shadow: 0 0 16px #f74;
+}
+
+body
+{
+background-image:url("webgfx/stripey-purple.png");
+background-attachment:scroll;
+color:#fff;
+font-family:"calibri";
+font-size:1.1em;
+}
+
+h1
+{
+color:#fff;
+font-size:2em;
+text-transform:capitalize;
+}
+
+h2
+{
+color:#fff;
+font-size:1.2em;
+font-style:italic;
+text-transform:capitalize;
+}
+
+code
+{
+color:#fff;
+font-family:"courier new";
+font-size:.75em;
+}
+
+.commandFolded, .commandUnfolded
+{
+font-size:1em;
+/*text-transform:uppercase;*/
+cursor:pointer;
+}
+
+.commandContent
+{
+margin-left:1em;
+position:relative;
+display:none;
+}
+
+.sub
+{
+color:#fff;
+font-size:1em;
+font-style:italic;
+font-weight:bold;
+text-transform:lowercase;
+}
+
+.tabbed {margin-left:1em;}

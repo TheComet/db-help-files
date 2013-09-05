@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<script src="../functions.js"></script>
+</head>
+
+<BODY>
+<h1>Memblock Commands</h1>
+<p style='width:98%'>
+Memblocks are used to store and manipulate various types of data. Unlike arrays that can store basic values, memory blocks can be used to
+ manipulate bitmap, image, sound and even 3D mesh data. There are 256 memblocks available and share the common ability to manipulate data at
+ the byte level, share their internal memory pointers and copy between memblocks easily.
+ Click any of the following commands for more information.
+</p>
+
+<!-- Copy Memblock -->
+<a name="mbcopy" class="commandFolded" onclick="return toggleVisibility(this)">copy memblock</a><BR>
+<div class="commandContent" id="ambcopy">
+  <div class="sub">Syntax</div>
+  <div class="tabbed"><code>COPY MEMBLOCK [Source Memblock],[Target Memblock],[Source Location],[Target Location],[Bytes]</code></div><br>
+  <div class="sub">Description</div>
+  <div class="tabbed">
+  This command will copy one section of a memblock to another section of another memblock.<br>
+  The Source Memblock and Target Memblock parameters must be existing memblocks.<br>
+  The Source Location and Target Location parameters must be byte locations within the respective memblocks.<br>
+  The Bytes parameter is the number of <a href="../glossary.htm#byte" target="_blank">bytes</a> you wish to copy from one memblock to the other.<br>
+  </div><br>
+  <div class="sub">Examples</div>
+  <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
+</div>
+<!-- Delete Memblock -->
+<a name="delmb" class="commandFolded" onclick="toggleVisibility(this)">delete memblock</a><BR>
+<div class="commandContent" id="adelmb">
+  <div class="sub">Syntax</div>
+  <div class="tabbed"><code>DELETE MEMBLOCK [Memblock Number]</code></div><br>
+  <div class="sub">Description</div>
+  <div class="tabbed">
+  This command will delete a memblock. If the memblock does not exist this command will fail.<br>
+  The parameter must be specified using an integer value.
+  </div><br>
+  <div class="sub">Examples</div>
+  <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
+</div>
+<!-- Make Memblock From Bitmap -->
+<a name="mkmbfb" class="commandFolded" onclick="return toggleVisibility(this)">make memblock from bitmap</a><BR>
+<div class="commandContent" id="amkmbfb">
+  <div class="sub">Syntax</div>
+  <div class="tabbed"><code>MAKE MEMBLOCK FROM BITMAP [Memblock Number],[Bitmap Number]</code></div><br>
+  <div class="sub">Description</div>
+  <div class="tabbed">
+  This command will make a memblock from a bitmap. The specified values must be integer values and the source bitmap must exist
+  or the command will fail.<br> <a href="mbbmpdata.htm">View memblock bitmap data structure</a>.
+  </div><br>
+  <div class="sub">Examples</div>
+  <div class="tabbed"><a href="examples/EXAM06.DBA" target="_blank">Bitmap Data Access</a></div><br>
+</div>
+<!-- Make Bitmap From Memblock -->
+<a name="mkbfmb" class="commandFolded" onclick="return toggleVisibility(this)">make bitmap from memblock</a><BR>
+<div class="commandContent" id="amkbfmb">
+  <div class="sub">Syntax</div>
+  <div class="tabbed"><code>MAKE BITMAP FROM MEMBLOCK [Bitmap Number],[Memblock Number]</code></div><br>
+  <div class="sub">Description</div>
+  <div class="tabbed">
+	This command will make a bitmap from a memblock. The specified values must be integer values and the source resource must exist or the command will fail.<br>
+	<a href="mbbmpdata.htm">View memblock bitmap data structure</a>.
+  </div><br>
+  <div class="sub">Examples</div>
+  <div class="tabbed"><a href="examples/EXAM06.DBA" target="_blank">Bitmap Data Access</a></div><br>
+</div>
+<!-- Make Memblock -->
+<a name="mkmb" class="commandFolded" onclick="toggleVisibility(this)">make memblock</a><br>
+<div class="commandContent" id="amkmb">
+  <div class="sub">Syntax</div>
+  <div class="tabbed"><code>MAKE MEMBLOCK [Memblock Number],[Size in Bytes]</code></div><br>
+  <div class="sub">Description</div>
+  <div class="tabbed">
+  This command will make a memblock of the given size.<br>
+  If the memblock already exists this command will fail.<br>
+  The parameters must be specified using integer values.
+  </div><br>
+  <div class="sub">Examples</div>
+  <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
+</div>
+<!-- Make Mesh From Memblock -->
+<a name="mkmfmb" class="commandFolded" onclick="return toggleVisibility(this)">make mesh from memblock</a><BR>
+<div class="commandContent" id="amkmfmb">
+  <div class="sub">Syntax</div>
+  <div class="tabbed"><code>MAKE MESH FROM MEMBLOCK [Mesh Number],[Memblock Number]</code></div><br>
+  <div class="sub">Description</div>
+  <div class="tabbed">
+	This command will create a mesh from a memblock. The memblock specified must already exist and follow	the correct structure for mesh data, otherwise the command will fail.<br>
+	<a href="mbmeshdata.htm">View Memblock Mesh Data Structure</a>.
+  </div><br>
+  <div class="sub">Examples</div>
+  <div class="tabbed"><a href="examples/EXAM03.DBA" target="_blank">Mesh Data Access</a></div><br>
+</div>
+<!-- Write Memblock Byte -->
+<a name="wmbb" class="commandFolded" onclick="return toggleVisibility(this)">write memblock byte</a><BR>
+<div class="commandContent" id="awmbb">
+  <div class="sub">Syntax</div>
+  <div class="tabbed"><code>WRITE MEMBLOCK BYTE [Memblock Number],[Position],[Byte]</code></div><br>
+  <div class="sub">Description</div>
+  <div class="tabbed">
+  This command will write a <a href="../glossary.htm#byte" target="_blank">byte</a> to a memblock at the specified location.<br>
+  The memblock must exist or the command will fail.<br>
+  The position value is specified in bytes.<br>
+  The parameters must be specified using integer values.
+  </div><br>
+  <div class="sub">Examples</div>
+  <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
+</div>
+<!-- Write Memblock DWord -->
+<a name="wmbd" class="commandFolded" onclick="return toggleVisibility(this)">write memblock dword</a><BR>
+<div class="commandContent" id="awmbd">
+  <div class="sub">Syntax</div>
+  <div class="tabbed"><code>WRITE MEMBLOCK DWORD [Memblock Number],[Position],[DWord]</code></div><br>
+  <div class="sub">Description</div>
+  <div class="tabbed">
+  This command will write a <a href="../glossary.htm#dword" target="_blank">dword</a> to a memblock at the specified location.<br>
+  The memblock must exist or the command will fail.<br>
+  The position value is specified in <a href="../glossary.htm#byte" target="_blank">bytes</a>.<br>
+  The parameters must be specified using integer values.
+  </div><br>
+  <div class="sub">Examples</div>
+  <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
+</div>
+<!-- Write Memblock Float -->
+<a name="wmbf" class="commandFolded" onclick="return toggleVisibility(this)">write memblock float</a><BR>
+<div class="commandContent" id="awmbf">
+  <div class="sub">Syntax</div>
+  <div class="tabbed"><code>WRITE MEMBLOCK FLOAT [Memblock Number],[Position],[Float]</code></div><br>
+  <div class="sub">Description</div>
+  <div class="tabbed">
+  This command will write a <a href="../glossary.htm#float" target="_blank">float</a> to a memblock at the specified location.<br>
+  The memblock must exist or the command will fail.<br>
+  The position value is specified in <a href="../glossary.htm#byte" target="_blank">bytes</a>.<br>
+  The parameters must be specified using integer values.
+  </div><br>
+  <div class="sub">Examples</div>
+  <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
+</div>
+<!-- Write Memblock Word -->
+<a name="wmbw" class="commandFolded" onclick="return toggleVisibility(this)">write memblock word</a><BR>
+<div class="commandContent" id="awmbw">
+  <div class="sub">Syntax</div>
+  <div class="tabbed"><code>WRITE MEMBLOCK WORD [Memblock Number],[Position],[Word]</code></div><br>
+  <div class="sub">Description</div>
+  <div class="tabbed">
+  This command will write a <a href="../glossary.htm#word" target="_blank">word</a> to a memblock at the specified location.<br>
+  The memblock must exist or the command will fail.<br>
+  The position value is specified in <a href="../glossary.htm#byte" target="_blank">bytes</a>.<br>
+  The parameters must be specified using integer values.
+  </div><br>
+  <div class="sub">Examples</div>
+  <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
+</div>
+
+
+<!--
+<a href="mbkmfi.htm">MAKE MEMBLOCK FROM IMAGE</a> will make a memblock from an image.<BR>
+<a href="mbkifm.htm">MAKE IMAGE FROM MEMBLOCK</a> will make an image from a memblock.<BR>
+<a href="mbkmfs.htm">MAKE MEMBLOCK FROM SOUND</a> will make a memblock from a sound.<BR>
+<a href="mbksfm.htm">MAKE SOUND FROM MEMBLOCK</a> will make a sound from a memblock.<BR>
+<a href="mbrb.htm">(Read) MEMBLOCK BYTE</a> will return a single byte from the memblock.<BR>
+<a href="mbrw.htm">(Read) MEMBLOCK WORD</a> will return a single word from the memblock.<BR>
+<a href="mbrd.htm">(Read) MEMBLOCK DWORD</a> will return a single dword from the memblock.<BR>
+<a href="mbrf.htm">(Read) MEMBLOCK FLOAT</a> will return a single float from the memblock.<BR>
+<a href="mkmbfmesh.htm">MAKE MEMBLOCK FROM MESH</a> will make a memblock from a mesh.<BR>
+<a href="mkmeshfmb.htm">MAKE MESH FROM MEMBLOCK</a> will make a mesh from a memblock.<BR>
+<a href="chmeshfmb.htm">CHANGE MESH FROM MEMBLOCK</a> will update a mesh from a memblock.<BR>
+<a href="lockbb.htm">LOCK BACKBUFFER</a> will lock the backbuffer for direct access.<BR>
+<a href="unlockbb.htm">UNLOCK BACKBUFFER</a> will unlock the backbuffer after a lock.<BR>
+<h2>The following commands will return a result:</h2>
+<a href="mbexist.htm">MEMBLOCK EXIST</a> will return a one if the memblock exists.<BR>
+<a href="mbgp.htm">GET MEMBLOCK PTR</a> will return the pointer to the memblock.<BR>
+<a href="mbgs.htm">GET MEMBLOCK SIZE</a> will return the size of the memblock.<BR>
+<a href="bbptr.htm">GET BACKBUFFER PTR</a> will get the pointer of a locked backbuffer.<BR>
+<a href="bbwidth.htm">GET BACKBUFFER WIDTH</a> will get the width of a locked backbuffer.<BR>
+<a href="bbheight.htm">GET BACKBUFFER HEIGHT</a> will get the height of a locked backbuffer.<BR>
+<a href="bbdepth.htm">GET BACKBUFFER DEPTH</a> will get the depth of a locked backbuffer.<BR>
+<a href="bbpitch.htm">GET BACKBUFFER PITCH</a> will get the pitch of a locked backbuffer.<BR>
+-->
+</BODY></HTML>
