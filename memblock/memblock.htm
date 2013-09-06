@@ -16,7 +16,7 @@ Memblocks are used to store and manipulate various types of data. Unlike arrays 
 
 <!-- Copy Memblock -->
 <a name="mbcopy" class="commandFolded" onclick="return toggleVisibility(this)">copy memblock</a><BR>
-<div class="commandContent" id="ambcopy">
+<div class="commandContent" id="mbcopy-content">
   <div class="sub">Syntax</div>
   <div class="tabbed"><code>COPY MEMBLOCK [Source Memblock],[Target Memblock],[Source Location],[Target Location],[Bytes]</code></div><br>
   <div class="sub">Description</div>
@@ -30,8 +30,8 @@ Memblocks are used to store and manipulate various types of data. Unlike arrays 
   <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
 </div>
 <!-- Delete Memblock -->
-<a name="delmb" class="commandFolded" onclick="toggleVisibility(this)">delete memblock</a><BR>
-<div class="commandContent" id="adelmb">
+<a id="delmb" class="commandFolded" onclick="toggleVisibility2(this)">delete memblock</a><BR>
+<div class="commandContent" id="delmb-content">
   <div class="sub">Syntax</div>
   <div class="tabbed"><code>DELETE MEMBLOCK [Memblock Number]</code></div><br>
   <div class="sub">Description</div>
@@ -43,8 +43,8 @@ Memblocks are used to store and manipulate various types of data. Unlike arrays 
   <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
 </div>
 <!-- Make Memblock From Bitmap -->
-<a name="mkmbfb" class="commandFolded" onclick="return toggleVisibility(this)">make memblock from bitmap</a><BR>
-<div class="commandContent" id="amkmbfb">
+<a id="mkmbfb" class="commandFolded" onclick="return toggleVisibility2(this)">make memblock from bitmap</a><BR>
+<div class="commandContent" id="mkmbfb-content">
   <div class="sub">Syntax</div>
   <div class="tabbed"><code>MAKE MEMBLOCK FROM BITMAP [Memblock Number],[Bitmap Number]</code></div><br>
   <div class="sub">Description</div>
@@ -56,8 +56,8 @@ Memblocks are used to store and manipulate various types of data. Unlike arrays 
   <div class="tabbed"><a href="examples/EXAM06.DBA" target="_blank">Bitmap Data Access</a></div><br>
 </div>
 <!-- Make Bitmap From Memblock -->
-<a name="mkbfmb" class="commandFolded" onclick="return toggleVisibility(this)">make bitmap from memblock</a><BR>
-<div class="commandContent" id="amkbfmb">
+<a id="mkbfmb" class="commandFolded" onclick="return toggleVisibility2(this)">make bitmap from memblock</a><BR>
+<div class="commandContent" id="mkbfmb-content">
   <div class="sub">Syntax</div>
   <div class="tabbed"><code>MAKE BITMAP FROM MEMBLOCK [Bitmap Number],[Memblock Number]</code></div><br>
   <div class="sub">Description</div>
@@ -69,8 +69,8 @@ Memblocks are used to store and manipulate various types of data. Unlike arrays 
   <div class="tabbed"><a href="examples/EXAM06.DBA" target="_blank">Bitmap Data Access</a></div><br>
 </div>
 <!-- Make Memblock -->
-<a name="mkmb" class="commandFolded" onclick="toggleVisibility(this)">make memblock</a><br>
-<div class="commandContent" id="amkmb">
+<a id="mkmb" class="commandFolded" onclick="toggleVisibility2(this)">make memblock</a><br>
+<div class="commandContent" id="mkmb-content">
   <div class="sub">Syntax</div>
   <div class="tabbed"><code>MAKE MEMBLOCK [Memblock Number],[Size in Bytes]</code></div><br>
   <div class="sub">Description</div>
@@ -83,8 +83,8 @@ Memblocks are used to store and manipulate various types of data. Unlike arrays 
   <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
 </div>
 <!-- Make Mesh From Memblock -->
-<a name="mkmfmb" class="commandFolded" onclick="return toggleVisibility(this)">make mesh from memblock</a><BR>
-<div class="commandContent" id="amkmfmb">
+<a id="mkmfmb" class="commandFolded" onclick="return toggleVisibility2(this)">make mesh from memblock</a><BR>
+<div class="commandContent" id="mkmfmb-content">
   <div class="sub">Syntax</div>
   <div class="tabbed"><code>MAKE MESH FROM MEMBLOCK [Mesh Number],[Memblock Number]</code></div><br>
   <div class="sub">Description</div>
@@ -96,8 +96,8 @@ Memblocks are used to store and manipulate various types of data. Unlike arrays 
   <div class="tabbed"><a href="examples/EXAM03.DBA" target="_blank">Mesh Data Access</a></div><br>
 </div>
 <!-- Write Memblock Byte -->
-<a name="wmbb" class="commandFolded" onclick="return toggleVisibility(this)">write memblock byte</a><BR>
-<div class="commandContent" id="awmbb">
+<a id="wmbb" class="commandFolded" onclick="return toggleVisibility2(this)">write memblock byte</a><BR>
+<div class="commandContent" id="wmbb-content">
   <div class="sub">Syntax</div>
   <div class="tabbed"><code>WRITE MEMBLOCK BYTE [Memblock Number],[Position],[Byte]</code></div><br>
   <div class="sub">Description</div>
@@ -111,8 +111,8 @@ Memblocks are used to store and manipulate various types of data. Unlike arrays 
   <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
 </div>
 <!-- Write Memblock DWord -->
-<a name="wmbd" class="commandFolded" onclick="return toggleVisibility(this)">write memblock dword</a><BR>
-<div class="commandContent" id="awmbd">
+<a id="wmbd" class="commandFolded" onclick="return toggleVisibility2(this)">write memblock dword</a><BR>
+<div class="commandContent" id="wmbd-content">
   <div class="sub">Syntax</div>
   <div class="tabbed"><code>WRITE MEMBLOCK DWORD [Memblock Number],[Position],[DWord]</code></div><br>
   <div class="sub">Description</div>
@@ -126,8 +126,8 @@ Memblocks are used to store and manipulate various types of data. Unlike arrays 
   <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
 </div>
 <!-- Write Memblock Float -->
-<a name="wmbf" class="commandFolded" onclick="return toggleVisibility(this)">write memblock float</a><BR>
-<div class="commandContent" id="awmbf">
+<a id="wmbf" class="commandFolded" onclick="return toggleVisibility2(this)">write memblock float</a><BR>
+<div class="commandContent" id="wmbf-content">
   <div class="sub">Syntax</div>
   <div class="tabbed"><code>WRITE MEMBLOCK FLOAT [Memblock Number],[Position],[Float]</code></div><br>
   <div class="sub">Description</div>
@@ -141,8 +141,8 @@ Memblocks are used to store and manipulate various types of data. Unlike arrays 
   <div class="tabbed"><a href="./examples/EXAM01.DBA" target="_blank">Simple Memblock</a></div><br>
 </div>
 <!-- Write Memblock Word -->
-<a name="wmbw" class="commandFolded" onclick="return toggleVisibility(this)">write memblock word</a><BR>
-<div class="commandContent" id="awmbw">
+<a id="wmbw" class="commandFolded" onclick="return toggleVisibility2(this)">write memblock word</a><BR>
+<div class="commandContent" id="wmbw-content">
   <div class="sub">Syntax</div>
   <div class="tabbed"><code>WRITE MEMBLOCK WORD [Memblock Number],[Position],[Word]</code></div><br>
   <div class="sub">Description</div>
