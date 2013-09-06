@@ -5,23 +5,251 @@
 <script src="../functions.js"></script>
 </head>
 <body>
-	<h1>2D Commands</h1>
+	<h1>Basic 2D Commands</h1>
 	<p style="width:98%">
 		2D command summary here.
 	</p>
 	
-	<a id="ldimg" class="commandFolded" onclick="return toggleVisibility2(this)">load image</a>
+	<a id="ink" class="commandFolded" onclick="return toggleVisibility2(this)">ink</a>
 	<br/>
-	<div class="commandContent" id="ldimg-content">
+	<div class="commandContent" id="ink-content">
 		<div class="sub">Syntax</div>
-		<div class="tabbed"><code>LOAD IMAGE [Filename],[Image ID],[Load Method]</code></div>
+		<div class="tabbed"><code>ink [Foreground Color],[Background Color]</code></div>
 		<div class="sub">Description</div>
 		<div class="tabbed">
 		&#60;Command description here&#62;
 		</div>
 		<br/>
 		<div class="sub">Examples</div>
-		<div class="tabbed"><a href="./examples/EXAMPLE_LDIMG.DBA" target="_blank">Simple Load Image</a></div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="cls" class="commandFolded" onclick="return toggleVisibility2(this)">cls</a>
+	<br/>
+	<div class="commandContent" id="cls-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>cls [Color Value]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="dot" class="commandFolded" onclick="return toggleVisibility2(this)">dot</a>
+	<br/>
+	<div class="commandContent" id="dot-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>dot [X],[Y]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="line" class="commandFolded" onclick="return toggleVisibility2(this)">line</a>
+	<br/>
+	<div class="commandContent" id="line-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>line [X1],[Y1],[X2],[Y2]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="box" class="commandFolded" onclick="return toggleVisibility2(this)">box</a>
+	<br/>
+	<div class="commandContent" id="box-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>box [Left],[Top],[Right],[Bottom]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="circle" class="commandFolded" onclick="return toggleVisibility2(this)">circle</a>
+	<br/>
+	<div class="commandContent" id="circle-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>circle [X],[Y],[Radius]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="ellipse" class="commandFolded" onclick="return toggleVisibility2(this)">ellipse</a>
+	<br/>
+	<div class="commandContent" id="ellipse-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>ellipse [X],[Y],[X Radius],[Y Radius]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="lkpixels" class="commandFolded" onclick="return toggleVisibility2(this)">lock pixels</a>
+	<br/>
+	<div class="commandContent" id="lkpixels-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>lock pixels</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="ulkpixels" class="commandFolded" onclick="return toggleVisibility2(this)">unlock pixels</a>
+	<br/>
+	<div class="commandContent" id="ulkpixels-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>unlock pixels</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<br/>
+	<br/>
+	
+	<a id="rgb" class="commandFolded" onclick="return toggleVisibility2(this)">rgb</a>
+	<br/>
+	<div class="commandContent" id="rgb-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>rgb [Red],[Green],[Blue]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="rgbr" class="commandFolded" onclick="return toggleVisibility2(this)">rgbr</a>
+	<br/>
+	<div class="commandContent" id="rgbr-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>rgbr [Color Value]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="rgbg" class="commandFolded" onclick="return toggleVisibility2(this)">rgbg</a>
+	<br/>
+	<div class="commandContent" id="rgbg-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>rgbg [Color Value]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="rgbb" class="commandFolded" onclick="return toggleVisibility2(this)">rgbb</a>
+	<br/>
+	<div class="commandContent" id="rgbb-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>rgbb [Color Value]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="point" class="commandFolded" onclick="return toggleVisibility2(this)">point</a>
+	<br/>
+	<div class="commandContent" id="point-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>point [X],[Y]</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="pxlptr" class="commandFolded" onclick="return toggleVisibility2(this)">get pixels pointer</a>
+	<br/>
+	<div class="commandContent" id="pxlptr-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>get pixels pointer</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
+		<br/>
+	</div>
+	
+	<a id="pxlptch" class="commandFolded" onclick="return toggleVisibility2(this)">get pixels pitch</a>
+	<br/>
+	<div class="commandContent" id="pxlptch-content">
+		<div class="sub">Syntax</div>
+		<div class="tabbed"><code>get pixels pitch</code></div>
+		<div class="sub">Description</div>
+		<div class="tabbed">
+		&#60;Command description here&#62;
+		</div>
+		<br/>
+		<div class="sub">Examples</div>
+		<div class="tabbed"><a href="./examples/EXAMPLE_BASIC2D.DBA" target="_blank">Simple Basic2D</a></div>
 		<br/>
 	</div>
 </body>

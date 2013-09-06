@@ -71,6 +71,7 @@ code
 color:#fff;
 font-family:"courier new";
 font-size:.75em;
+text-transform:capitalize;
 }
 
 .commandFolded, .commandUnfolded
